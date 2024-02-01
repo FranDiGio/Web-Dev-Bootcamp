@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /*
+    Write your CSS here
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+    */
+
+    body {
+      height: 100vh;
+    }
+
+    .frame {
+      display: grid;
+      width: 748px;
+      height: 748px;
+      background-color: #F0F1EC;
+      grid-template-rows: 414px 9px 130px 10px 155px 9px 20px;
+      grid-template-columns: 320px 9px 198px 9px 153px 9px 50px;
+    }
+
+    .gap {
+      background-color: black;
+    }
+
+    .first {
+      grid-area: 1 / 2 / 8 / 3;
+    }
+
+    .second {
+      grid-area: 7 / 4 / 8 / 5;
+    }
+
+    .third {
+      grid-area: 2 / 6 / 8 / 7;
+    }
+
+    .fourth {
+      grid-area: 2 / 1 / 3 / 8;
+    }
+
+    .fifth {
+      grid-area: 4 / 7 / 5 / 8;
+    }
+
+    .sixth {
+      grid-area: 6 / 1 / 7 / 7;
+    }
+
+    .red {
+      background-color: #E72F24;
+      grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .blue {
+      background-color: #004592;
+      grid-area: 3 / 7 / 4 / 8;
+    }
+
+    .yellow {
+      background-color: #F9D01E;
+      grid-area: 7 / 3 / 8 / 4;
+    }
+
+    .black {
+      background-color: #232629;
+      grid-area: 7 / 5 / 8 / 6;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="frame">
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="yellow"></div>
+    <div class="black"></div>
+    <div class="first gap"></div>
+    <div class="second gap"></div>
+    <div class="third gap"></div>
+    <div class="fourth gap"></div>
+    <div class="fifth gap"></div>
+    <div class="sixth gap"></div>
+  </div>
+</body>
+
+</html>
