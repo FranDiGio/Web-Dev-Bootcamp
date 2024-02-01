@@ -4,11 +4,13 @@ This repository contains my personal exercises and projects from the Web Develop
 
 The repository will already have many of these exercises done from the first commit, as I did a substantial part of the Bootcamp while saving everything locally.
 
+
 ## About the Bootcamp
 
 The Complete 2024 Web Development Bootcamp from 'The App Brewery' is an intensive course designed to take students from beginners to job-ready web developers. Covering a wide range of topics from HTML, CSS, and JavaScript to advanced frameworks and back-end technologies, the bootcamp is structured to provide a comprehensive foundation in web development.
 
 Several Capstone Projects in my GitHub repository, initially intended as short to mid-size bootcamp assignments, have evolved into more comprehensive projects aimed at meeting industry standards.
+
 
 ## Repository Structure
 
@@ -22,7 +24,8 @@ Some examples of these sections are:
 - `Front-End Frameworks`: Projects and exercises using frameworks like React.
 - `Back-End Development`: Node.js, Express, and database integration exercises.
 - `Full-Stack Projects`: Comprehensive projects that integrate both front-end and back-end technologies.
-- 'Extra Modules': Usage of trending tech like Blockchain / Web3
+- `Extra Modules`: Usage of trending tech like Blockchain / Web3
+
 
 ## Reflections
 
