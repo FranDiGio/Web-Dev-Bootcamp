@@ -1,12 +1,17 @@
 import express from "express";
 import axios from "axios";
 import bodyParser from "body-parser";
+import('dotenv').then((dotenv) => {
+  dotenv.config();
+}).catch((error) => {
+  console.error('Failed to load dotenv', error);
+});
 
 const app = express();
 const port = 3000;
 const API_URL = "https://secrets-api.appbrewery.com";
 
-const yourBearerToken = "d27c262a-2ed3-49f4-b718-a7e708bb2100";
+const yourBearerToken = process.env.BEARER_TOKEN;
 const config = {
   headers: { Authorization: `Bearer ${yourBearerToken}` },
 };

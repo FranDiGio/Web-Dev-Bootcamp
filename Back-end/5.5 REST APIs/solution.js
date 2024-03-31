@@ -1,13 +1,14 @@
 import express from "express";
 import axios from "axios";
 import bodyParser from "body-parser";
+await import('dotenv').then((dotenv) => dotenv.config());
 
 const app = express();
 const port = 3000;
 const API_URL = "https://secrets-api.appbrewery.com";
 
 //Add your own bearer token from the previous lesson.
-const yourBearerToken = "08f3026d-9c6c-4d88-a3b2-c579dc106247";
+const yourBearerToken = process.env.BEARER_TOKEN;
 const config = {
   headers: { Authorization: `Bearer ${yourBearerToken}` },
 };
@@ -16,6 +17,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
   res.render("index.ejs", { content: "Waiting for data..." });
+  console.log(yourBearerToken);
 });
 
 app.post("/get-secret", async (req, res) => {
